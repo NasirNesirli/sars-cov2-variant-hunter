@@ -70,7 +70,7 @@ sars-cov2-variant-hunter/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/sars-cov2-variant-hunter.git
+git clone https://github.com/NasirNesirli/sars-cov2-variant-hunter.git
 cd sars-cov2-variant-hunter
 ```
 
