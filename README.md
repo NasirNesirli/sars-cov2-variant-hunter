@@ -85,7 +85,15 @@ curl -o data/reference/MN908947.3.fasta \
   https://raw.githubusercontent.com/jonas-fuchs/varVAMP_in_silico_analysis/11bf299d73cc069fbc8fa2be86ed57ada649afcd/reference_seq/SARS-CoV-2/MN908947.3.fasta
 ```
 
-4. **Place your FASTQ files** in `data/raw_fastq/` directory
+4. **Download example FASTQ files** (or place your own in `data/raw_fastq/`):
+```bash
+# Download example SARS-CoV-2 FASTQ files from Figshare
+curl -L -o data/raw_fastq/VIROAF4434_S1_L001_R1_001.fastq.gz \
+  https://figshare.com/ndownloader/files/43136083
+
+curl -L -o data/raw_fastq/VIROAF4434_S1_L001_R2_001.fastq.gz \
+  https://figshare.com/ndownloader/files/43136089
+```
 
 ### Running the Pipeline
 
