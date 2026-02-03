@@ -1,0 +1,87 @@
+# ========================================
+# SARS-CoV-2 Variant Hunter - Git Ignore
+# ========================================
+
+# ========================================
+# Data Files (Large)
+# ========================================
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.sam
+
+# Keep reference genome but ignore indices (can be regenerated)
+data/reference/*.amb
+data/reference/*.ann
+data/reference/*.bwt
+data/reference/*.pac
+data/reference/*.sa
+data/reference/*.fai
+
+# ========================================
+# Results (Generated)
+# ========================================
+results/aligned/
+results/vcf/
+results/qc/
+
+# Keep the directory structure
+!results/aligned/.gitkeep
+!results/vcf/.gitkeep
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv
+
+# ========================================
+# Pixi
+# ========================================
+.pixi/
+pixi.lock
+
+# ========================================
+# macOS
+# ========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ========================================
+# Editors
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.#*
+
+# ========================================
+# Logs & Temp
+# ========================================
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+
+# ========================================
+# Documentation images - KEEP IN REPO
+# ========================================
+# Track all images in docs/images/
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.gif

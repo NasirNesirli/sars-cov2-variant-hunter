@@ -1,0 +1,21 @@
+# Results Directory
+
+This directory contains the output files from the variant calling pipeline.
+
+## Subdirectories
+
+### `aligned/`
+Contains BAM files from read alignment:
+- `aligned_reads.bam` - Raw aligned reads
+- `sorted_reads.bam` - Coordinate-sorted reads
+- `sorted_reads.bam.bai` - BAM index file
+
+### `vcf/`
+Contains variant call files:
+- `raw_variants.vcf` - All called variants (unfiltered)
+- `final_variants.vcf` - High-quality filtered variants (QUAL>20, DP>20)
+
+## Notes
+
+These files are regenerated each time the pipeline runs.
+Large BAM files are excluded from git tracking (see `.gitignore`).
