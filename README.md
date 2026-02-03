@@ -194,7 +194,12 @@ pixi run bash pipeline.sh
 
 ### View specific variant
 ```bash
-pixi run bcftools view -r MN908947.3:14408 results/vcf/final_variants.vcf
+# First, compress and index the VCF file
+pixi run bgzip -c results/vcf/final_variants.vcf > results/vcf/final_variants.vcf.gz
+pixi run tabix -p vcf results/vcf/final_variants.vcf.gz
+
+# Then query specific positions
+pixi run bcftools view -r MN908947.3:14408 results/vcf/final_variants.vcf.gz
 ```
 
 ### Extract high-impact variants

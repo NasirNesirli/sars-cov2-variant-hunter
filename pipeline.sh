@@ -12,8 +12,8 @@ set -o pipefail  # Exit on pipe failure
 
 # Configuration
 REFERENCE="data/reference/MN908947.3.fasta"
-R1_FASTQ="data/raw_fastq/VIROAF4434_S1_L001_R1_001.fastq.gz"
-R2_FASTQ="data/raw_fastq/VIROAF4434_S1_L001_R2_001.fastq.gz"
+R1_FASTQ="data/raw_fastq/sample_R1.fastq.gz"
+R2_FASTQ="data/raw_fastq/sample_R2.fastq.gz"
 ALIGNED_DIR="results/aligned"
 VCF_DIR="results/vcf"
 
