@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Pixi](https://img.shields.io/badge/Pixi-managed-blue)](https://pixi.sh)
-[![Platform](https://img.shields.io/badge/platform-macOS%20ARM64-lightgrey)](https://www.apple.com/mac/)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)](https://pixi.sh)
 
 A bioinformatics pipeline for detecting genomic variants in SARS-CoV-2 samples using next-generation sequencing (NGS) data. This automated workflow performs quality control, read alignment, and variant calling to identify mutations in viral samples.
 
@@ -63,7 +63,7 @@ sars-cov2-variant-hunter/
 
 ### Prerequisites
 
-- macOS (ARM64/Apple Silicon)
+- Linux, macOS, or Windows (with WSL for bash script execution)
 - [Pixi](https://pixi.sh) package manager
 
 ### Installation

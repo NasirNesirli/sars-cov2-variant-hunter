@@ -2,7 +2,7 @@
 authors = ["Nasir Nesirli <nasir.nesirli@gmail.com>"]
 channels = ["conda-forge", "bioconda"]
 name = "sars-variant-hunter"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64", "win-64"]
 version = "0.1.0"
 
 [tasks]
