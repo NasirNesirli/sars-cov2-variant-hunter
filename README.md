@@ -82,7 +82,7 @@ pixi install
 3. **Download reference genome**:
 ```bash
 curl -o data/reference/MN908947.3.fasta \
-  https://raw.githubusercontent.com/jonas-fuchs/varVAMP_in_silico_analysis/11bf299d73cc069fbc8fa2be86ed57ada649afcd/reference_seq/SARS-CoV-2/MN908947.3.fasta
+  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MN908947.3&rettype=fasta&retmode=text"
 ```
 
 4. **Download example FASTQ files** (or place your own in `data/raw_fastq/`):
