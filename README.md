@@ -171,7 +171,7 @@ The pipeline identifies variants like:
 
 Visualization of aligned reads and detected variants in Integrative Genomics Viewer (IGV):
 
-![SARS-CoV-2 Variant Visualization in IGV](docs/images/igv-sars-cov2-variant.png)
+![SARS-CoV-2 Variant Visualization in IGV](images/igv-sars-cov2-variant.png)
 
 *The IGV screenshot shows the alignment coverage across the SARS-CoV-2 genome with detected variants highlighted. You can load the BAM files into IGV for interactive exploration of your results.*
 
