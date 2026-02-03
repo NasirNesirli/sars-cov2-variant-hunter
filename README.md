@@ -87,12 +87,23 @@ curl -o data/reference/MN908947.3.fasta \
 
 4. **Download example FASTQ files** (or place your own in `data/raw_fastq/`):
 ```bash
-# Download example SARS-CoV-2 FASTQ files from Figshare
-curl -L -o data/raw_fastq/VIROAF4434_S1_L001_R1_001.fastq.gz \
-  https://figshare.com/ndownloader/files/43136083
+# Create the directory
+mkdir -p data/raw_fastq
 
-curl -L -o data/raw_fastq/VIROAF4434_S1_L001_R2_001.fastq.gz \
-  https://figshare.com/ndownloader/files/43136089
+# Option 1: Download from ENA (European Nucleotide Archive) - Direct download
+# Example: ERR4145453 - SARS-CoV-2 sample
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR414/003/ERR4145453/ERR4145453_1.fastq.gz -o data/raw_fastq/sample_R1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR414/003/ERR4145453/ERR4145453_2.fastq.gz -o data/raw_fastq/sample_R2.fastq.gz
+
+# Option 2: Download from SRA using sra-tools
+# Install sra-tools: pixi add sra-tools
+# Example: SRR11772204 - SARS-CoV-2 clinical sample
+# pixi run fasterq-dump --split-files -O data/raw_fastq/ SRR11772204
+# pixi run gzip data/raw_fastq/SRR11772204_*.fastq
+
+# Option 3: Use your own FASTQ files
+# Place paired-end FASTQ files in data/raw_fastq/
+# Update the FASTQ variables in pipeline.sh to match your filenames
 ```
 
 ### Running the Pipeline
